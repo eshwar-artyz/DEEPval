@@ -1,0 +1,24 @@
+{
+  "Admin": [
+    {
+      "id": "5d08",
+      "U_name": "lokesh",
+      "email": "lokesh@gmail.com",
+      "password": "1234",
+      "repassword": "1234",
+      "age": "23",
+      "phone": "7158714191",
+      "profile": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThddzoqyN0cBnGzis6YSD-30zFpKx3GPVxBdOyqhRhZtUDLA52RM-kOIdIQBkxSG_g8_KjUByGAo-cH0CmEHHPW3ynpCD9ggeKL7tE-e0aRA"
+    },
+    {
+      "id": "115c",
+      "U_name": "zytra",
+      "email": "zytra@gmail.com",
+      "password": "3456",
+      "repassword": "3456",
+      "age": "21",
+      "phone": "8632764187",
+      "profile": "https://i.namu.wiki/i/aNimaB0GNB2szJHYnNRYbEQptuS7Y9jXgCd6RNczX4SxBC4e9zHs-GFp4YMkqtkYxJa6KYlmXZC_6MLHYu5D4Q.webp"
+    }
+  ]
+}

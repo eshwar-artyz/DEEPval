@@ -1,0 +1,25 @@
+.LandingPage {
+        display: flex;
+        position: relative;
+        gap: 50px;
+        justify-content: center;
+        top: 25vh;
+        
+}
+.LandingPage img {
+    height: 400px;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.LandingPage a {
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: brown;
+    transition: 0.5s;
+}
+.LandingPage a:hover {
+    transform: scale(1.1);
+}

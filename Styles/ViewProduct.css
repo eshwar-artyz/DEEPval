@@ -1,0 +1,126 @@
+:root {
+    --bg: #f9f9fb;
+    --text: #1a1a1a;
+    --muted: #8b8f94;
+    --accent: #0f62fe;
+    --gold: #f5c518;
+    --success: #0b6a36;
+    --danger: #b02a37;
+}
+
+/* Whole page layout */
+.viewProduct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--bg);
+    gap: 60px;
+    padding: 40px 80px;
+    box-sizing: border-box;
+    color: var(--text);
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* Product image section */
+.productImage {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImage img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+}
+
+.productImage img:hover {
+    transform: scale(1.05);
+}
+
+/* Product info section */
+.productInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.5;
+}
+
+.productInfo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.productInfo h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+.productInfo h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--muted);
+    max-width: 80%;
+}
+
+.productInfo hr {
+    width: 60%;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 8px 0;
+}
+
+/* Rating & Stock */
+.productRating,
+.productStock {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+.productRating {
+    color: var(--gold);
+    background: rgba(245, 197, 24, 0.15);
+}
+
+.productStock {
+    color: var(--success);
+    background: rgba(11, 106, 54, 0.12);
+    margin-left: 10px;
+}
+
+.productStock.low {
+    color: var(--danger);
+    background: rgba(176, 42, 55, 0.15);
+}
+
+.productRating svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Price section */
+strike {
+    color: var(--muted);
+    margin-top: 10px;
+    font-size: 1rem;
+    display: block;
+}
+
+.offerPrice {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--success);
+}

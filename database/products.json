@@ -1,0 +1,213 @@
+{
+  "Products": [
+    {
+      "id": "9707",
+      "Prname": "Berserk",
+      "category": "Books & Stationery",
+      "brand": "Levi's",
+      "price": "120",
+      "desc": "Peak book",
+      "image": "https://www.gutsberserk.com/wp-content/uploads/2022/01/62.jpg",
+      "stock": "200",
+      "ratings": "5"
+    },
+    {
+      "id": "9708",
+      "Prname": "iPhone 15 Pro",
+      "category": "Electronics",
+      "brand": "Apple",
+      "price": "139999",
+      "desc": "Flagship smartphone with A17 Pro chip",
+      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg",
+      "stock": "500",
+      "ratings": "5"
+    },
+    {
+      "id": "9709",
+      "Prname": "Air Jordan 1",
+      "category": "Footwear",
+      "brand": "Nike",
+      "price": "15999",
+      "desc": "Classic basketball sneakers",
+      "image": "https://cdn-images.farfetch-contents.com/19/67/26/22/19672622_44342082_1000.jpg",
+      "stock": "120",
+      "ratings": "4.8"
+    },
+    {
+      "id": "9710",
+      "Prname": "QLED 4K TV",
+      "category": "Electronics",
+      "brand": "Samsung",
+      "price": "79999",
+      "desc": "65-inch QLED Smart TV with vibrant colors",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/qa65q70daulxl/gallery/in-qled-q70d-qa65q70daulxl-539990480?$684_547_PNG$",
+      "stock": "30",
+      "ratings": "4.7"
+    },
+    {
+      "id": "9711",
+      "Prname": "Aventador Model Car",
+      "category": "Toys & Games",
+      "brand": "Lamborghini",
+      "price": "4999",
+      "desc": "1:18 scale collectible Lamborghini Aventador model",
+      "image": "https://imgd.aeplcdn.com/664x374/cw/ec/9802/Lamborghini-Aventador-Exterior-119862.jpg?wm=0&q=80",
+      "stock": "75",
+      "ratings": "4.9"
+    },
+    {
+      "id": "9712",
+      "Prname": "Galaxy Watch 6",
+      "category": "Smartphones & Gadgets",
+      "brand": "Samsung",
+      "price": "29999",
+      "desc": "Premium smartwatch with fitness tracking",
+      "image": "https://m.media-amazon.com/images/I/71hg6m6m50L._UF1000,1000_QL80_.jpg",
+      "stock": "100",
+      "ratings": "4.6"
+    },
+    {
+      "id": "9713",
+      "Prname": "Gucci Bloom Perfume",
+      "category": "Beauty & Personal Care",
+      "brand": "Gucci",
+      "price": "9600",
+      "desc": "Floral fragrance for women",
+      "image": "https://images-static.nykaa.com/media/catalog/product/2/8/28bad638005610481043_1.jpg?tr=w-500",
+      "stock": "150",
+      "ratings": "4.7"
+    },
+    {
+      "id": "9714",
+      "Prname": "Yoga Mat Pro",
+      "category": "Sports & Fitness",
+      "brand": "Puma",
+      "price": "2499",
+      "desc": "Non-slip yoga mat for comfortable workouts",
+      "image": "https://rukminim2.flixcart.com/image/300/300/xif0q/sport-mat/b/q/l/-original-imagws7fjpbagwut.jpeg",
+      "stock": "180",
+      "ratings": "4.4"
+    },
+    {
+      "id": "9715",
+      "Prname": "Dell XPS 15",
+      "category": "Electronics",
+      "brand": "Dell",
+      "price": "184999",
+      "desc": "High-performance laptop for professionals",
+      "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&wid=3778&hei=2323&qlt=100,1&resMode=sharp2&size=3778,2323&chrss=full&imwidth=5000",
+      "stock": "45",
+      "ratings": "4.8"
+    },
+    {
+      "id": "9716",
+      "Prname": "Ray-Ban Aviator Sunglasses",
+      "category": "Fashion",
+      "brand": "Ray-Ban",
+      "price": "9999",
+      "desc": "Classic metal frame aviators",
+      "image": "https://india.ray-ban.com/media/catalog/product/cache/048600d570cc45aff3335c8130dd2121/0/r/0rb3825_001_31_6.png",
+      "stock": "220",
+      "ratings": "4.5"
+    },
+    {
+      "id": "9717",
+      "Prname": "Acoustic Guitar",
+      "category": "Musical Instruments",
+      "brand": "Yamaha",
+      "price": "8999",
+      "desc": "Full-size acoustic guitar with great tone",
+      "image": "https://www.bajaao.com/cdn/shop/files/yamaha-acoustic-guitars-natural-yamaha-f-370-6-string-spruce-top-6-string-acoustic-guitar-23035942764723.jpg?v=1741595187",
+      "stock": "90",
+      "ratings": "4.6"
+    },
+    {
+      "id": "9718",
+      "Prname": "Mechanical Keyboard",
+      "category": "Electronics",
+      "brand": "Logitech",
+      "price": "7999",
+      "desc": "RGB backlit mechanical keyboard for gaming",
+      "image": "https://resource.logitechg.com/w_386,ar_1.0,c_limit,f_auto,q_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/non-braid/g413-firebird/g413-gallery-1-nb.png?v=1",
+      "stock": "110",
+      "ratings": "4.8"
+    },
+    {
+      "id": "9719",
+      "Prname": "Rolex Submariner",
+      "category": "Watches",
+      "brand": "Rolex",
+      "price": "950000",
+      "desc": "Luxury diving watch",
+      "image": "https://timeavenue.com/wp-content/uploads/2025/05/m126613lb-0002-1.webp",
+      "stock": "10",
+      "ratings": "5"
+    },
+    {
+      "id": "9720",
+      "Prname": "Gaming Headset G733",
+      "category": "Electronics",
+      "brand": "Logitech",
+      "price": "12999",
+      "desc": "Wireless RGB gaming headset",
+      "image": "https://m.media-amazon.com/images/I/71xNjrzG69L.jpg",
+      "stock": "140",
+      "ratings": "4.7"
+    },
+    {
+      "id": "9721",
+      "Prname": "Zara Denim Jacket",
+      "category": "Fashion",
+      "brand": "Zara",
+      "price": "4999",
+      "desc": "Classic blue denim jacket",
+      "image": "https://m.media-amazon.com/images/I/81vMvGh5rKL._UY1100_.jpg",
+      "stock": "160",
+      "ratings": "4.6"
+    },
+    {
+      "id": "9722",
+      "Prname": "Kitchen Blender Pro",
+      "category": "Home & Kitchen",
+      "brand": "Philips",
+      "price": "3599",
+      "desc": "Powerful 3-speed kitchen blender",
+      "image": "https://m.media-amazon.com/images/I/61GcPlsVsoL.jpg",
+      "stock": "130",
+      "ratings": "4.3"
+    },
+    {
+      "id": "9723",
+      "Prname": "Toyota Supra Model",
+      "category": "Toys & Games",
+      "brand": "Toyota",
+      "price": "3999",
+      "desc": "1:24 scale Toyota Supra collectible car model",
+      "image": "https://m.media-amazon.com/images/I/61LgULyrFwL.jpg",
+      "stock": "80",
+      "ratings": "4.8"
+    },
+    {
+      "id": "9725",
+      "Prname": "HP Pavilion 14",
+      "category": "Electronics",
+      "brand": "HP",
+      "price": "62999",
+      "desc": "Powerful student laptop with Intel i5 processor",
+      "image": "https://m.media-amazon.com/images/I/51r0ZWoHQBL.jpg",
+      "stock": "55",
+      "ratings": "4.4"
+    },
+    {
+      "id": "9726",
+      "Prname": "Tesla Cybertruck Poster",
+      "category": "Art & Collectibles",
+      "brand": "Tesla",
+      "price": "999",
+      "desc": "High-quality matte Tesla Cybertruck wall poster",
+      "image": "https://cdn.displate.com/artwork/270x380/2024-03-13/e651e03e2bd77380dc2ade05aed098c1_7c696949f113fb67825410a065fb47f3.jpg",
+      "stock": "300",
+      "ratings": "4.9"
+    }
+  ]
+}

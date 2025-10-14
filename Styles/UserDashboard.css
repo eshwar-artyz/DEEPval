@@ -1,0 +1,130 @@
+.userdashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px 60px;
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+.userproductCard {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.userproductCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.thumbnail img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Product Description */
+.userdesc {
+    padding: 15px 10px;
+    width: 100%;
+}
+
+.userdesc h4 {
+    margin: 5px 0;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.userdesc h4:hover {
+    color: #007bff;
+}
+
+.userdesc strike {
+    display: block;
+    color: #888;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.userdesc span {
+    display: block;
+    color: #222;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+/* Rating & Stock */
+.usersubDesc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+#rating svg {
+    color: gold;
+    margin-left: 4px;
+}
+
+#stock svg {
+    color: #007bff;
+    margin-left: 4px;
+}
+
+/* Buttons */
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.btn button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#buy {
+    background-color: #28a745;
+    color: white;
+}
+
+#buy:hover {
+    background-color: #218838;
+}
+
+#addtocart {
+    background-color: #ffc107;
+    color: #222;
+}
+
+#addtocart:hover {
+    background-color: #e0a800;
+}
+
+.btn svg {
+    width: 16px;
+    height: 16px;
+}

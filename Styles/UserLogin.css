@@ -1,0 +1,71 @@
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #008080;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.5px;
+}
+
+.userLogin {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #f1f8f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 128, 128, 0.09);
+}
+
+.userLogin label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #008080;
+}
+
+.userLogin input[type="text"],
+.userLogin input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  border: 1px solid #a3d1d1;
+  border-radius: 8px;
+  background: #e6f4f4;
+  transition: border-color 0.3s;
+}
+
+.userLogin input:focus {
+  border-color: #008080;
+  outline: none;
+}
+
+.userLogin button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.3s;
+}
+
+.userLogin button:hover {
+  background: #019999;
+}
+
+.userLogin a {
+  display: inline-block;
+  margin-top: 16px;
+  color: #019999;
+  text-decoration: underline;
+  font-size: 0.98rem;
+  transition: color 0.2s;
+}
+
+.userLogin a:hover {
+  color: #008080;
+}

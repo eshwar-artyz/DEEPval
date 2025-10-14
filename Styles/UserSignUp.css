@@ -1,0 +1,56 @@
+.UserSignUp {
+  max-width: 450px;
+  margin: 44px auto;
+  padding: 36px 30px;
+  background: #f7fff7;
+  border-radius: 16px;
+  box-shadow: 0 2px 18px rgba(54, 158, 97, 0.08);
+}
+
+.UserSignUp label {
+  display: block;
+  font-weight: 500;
+  color: #369e61;
+  margin-bottom: 7px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.UserSignUp input[type="text"] {
+  width: 100%;
+  padding: 9px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  border: 1px solid #bce3c3;
+  background: #e7f7eb;
+  border-radius: 9px;
+  transition: border-color 0.27s;
+}
+
+.UserSignUp input[type="text"]:focus {
+  border-color: #369e61;
+  outline: none;
+}
+
+.UserSignUp button {
+  width: 100%;
+  padding: 13px;
+  font-size: 1.1rem;
+  background: #369e61;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.23s;
+}
+
+.UserSignUp button:hover {
+  background: #287c48;
+}
+
+.UserSignUp form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

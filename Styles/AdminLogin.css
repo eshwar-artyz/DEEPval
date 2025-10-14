@@ -1,0 +1,71 @@
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #234269;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.adminLogin {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #f8fbff;
+  border-radius: 12px;
+  box-shadow: 0 2px 18px rgba(35, 66, 105, 0.08);
+}
+
+.adminLogin label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #234269;
+}
+
+.adminLogin input[type="text"],
+.adminLogin input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  border: 1px solid #b8cbe1;
+  border-radius: 8px;
+  background: #eaf2fb;
+  transition: border-color 0.3s;
+}
+
+.adminLogin input:focus {
+  border-color: #234269;
+  outline: none;
+}
+
+.adminLogin button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background: #234269;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.3s;
+}
+
+.adminLogin button:hover {
+  background: #3462ac;
+}
+
+.adminLogin a {
+  display: inline-block;
+  margin-top: 16px;
+  color: #3462ac;
+  text-decoration: underline;
+  font-size: 0.98rem;
+  transition: color 0.2s;
+}
+
+.adminLogin a:hover {
+  color: #234269;
+}

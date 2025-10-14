@@ -1,0 +1,62 @@
+.AdminSignUp {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #f1f8ff 0%, #f6e9ff 100%);
+}
+
+.AdminSignUp form {
+  background: #fff;
+  padding: 32px 28px 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(50, 55, 80, 0.13);
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.AdminSignUp label {
+  font-size: 15px;
+  color: #454c5e;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.AdminSignUp input[type="text"] {
+  padding: 11px 12px;
+  border-radius: 7px;
+  border: 1px solid #d7d9ee;
+  background: #f7f9fd;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #292a2a;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.AdminSignUp input[type="text"]:focus {
+  border-color: #7e67ff;
+  background: #fff;
+}
+
+.AdminSignUp button {
+  margin-top: 14px;
+  padding: 11px 0;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #7e67ff, #4a3eca);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.AdminSignUp button:hover {
+  background: linear-gradient(90deg, #4a3eca, #7e67ff);
+  transform: translateY(-1px) scale(1.02);
+}

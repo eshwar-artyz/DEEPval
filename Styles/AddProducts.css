@@ -1,0 +1,120 @@
+.addProducts {
+    max-width: 880px;
+    margin: 36px auto;
+    padding: 28px;
+    background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+    border: 1px solid rgba(17, 24, 39, 0.04);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #0f172a;
+}
+
+
+.addProducts form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 20px;
+    align-items: start;
+}
+
+
+.addProducts label {
+    grid-column: 1 / -1;
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+    display: inline-block;
+    color: #0b1220;
+    font-weight: 600;
+}
+
+
+.addProducts input[type="text"],
+.addProducts input[type="number"],
+.addProducts textarea,
+.addProducts select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    background: #ffffff;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+    outline: none;
+    transition: box-shadow 160ms ease, transform 120ms ease, border-color 120ms ease;
+}
+
+
+.addProducts label+input,
+.addProducts label+textarea,
+.addProducts label+select {
+    margin-bottom: 12px;
+    grid-column: 1 / -1;
+}
+
+
+.addProducts input:focus,
+.addProducts textarea:focus,
+.addProducts select:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.08), 0 0 0 4px rgba(37, 99, 235, 0.06);
+    transform: translateY(-1px);
+}
+
+.addProducts ::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+
+.addProducts button {
+    grid-column: 1 / -1;
+    margin-top: 6px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 2PX solid #17a2b8;
+    color: #17a2b8;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.18);
+    transition: transform 140ms ease, box-shadow 140ms ease, opacity 120ms ease;
+}
+
+
+.addProducts button:hover {
+    transform: translateY(-2px);
+    opacity: 0.98;
+    background-color: #17a2b8;
+    color: white;
+}
+
+.addProducts button:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.16);
+}
+
+.addProducts .hint {
+    grid-column: 1 / -1;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 6px;
+}
+
+.addProducts.compact {
+    padding: 18px;
+}
+
+.addProducts.compact input {
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.addProducts::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0));
+    margin-bottom: 14px;
+}

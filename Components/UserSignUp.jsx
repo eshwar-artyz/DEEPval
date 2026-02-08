@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../Styles/UserSignUp.css'
 import axios from 'axios'
 import { toast } from 'react-toastify'
-import { USER_API } from "../config/api"
+import { USER_API } from '../src/config/api';
 
 function UserSignUp() {
     let [user,setUser] = useState({

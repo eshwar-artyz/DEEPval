@@ -3,7 +3,7 @@ import '../Styles/UserLogin.css'
 import { toast } from 'react-toastify'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { USER_API } from "../config/api";
+import { USER_API } from '../src/config/api';
 
 
 function UserLogin() {

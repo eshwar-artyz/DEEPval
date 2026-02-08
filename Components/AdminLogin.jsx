@@ -3,7 +3,7 @@ import '../Styles/AdminLogin.css'
 import {toast} from 'react-toastify'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { AUTH_API } from "../config/api";
+import { AUTH_API } from '../src/config/api';
 
 function AdminLogin() {
   let[email,setEmail] = useState("");

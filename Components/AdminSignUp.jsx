@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../Styles/AdminSignUp.css'
 import axios from 'axios'
 import { toast } from 'react-toastify'
-import { AUTH_API } from "../config/api";
+import { AUTH_API } from '../src/config/api';
 
 function AdminSignUp() {
     let [admin,setAdmin] = useState({

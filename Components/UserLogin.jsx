@@ -3,6 +3,8 @@ import '../Styles/UserLogin.css'
 import { toast } from 'react-toastify'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { USER_API } from "../config/api";
+
 
 function UserLogin() {
   let [email, setEmail] = useState("");
@@ -10,7 +12,7 @@ function UserLogin() {
   let [accounts, setaccounts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:1002/User")
+    axios.get(`${USER_API}/User`)
       .then((res) => {
         setaccounts(res.data);
         console.log(res.data);

@@ -1,24 +1,25 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import '../Styles/Dashboard.css'
 import { toast } from 'react-toastify'
+import { PRODUCT_API } from '../src/config/api'
 
 function Dashboard() {
     let [items, setItems] = useState([])
     let [force, setForce] = useState(0)
     useEffect(() => {
-        axios.get("http://localhost:1001/Products")
+         axios.get(`${PRODUCT_API}/Products`)
             .then((res) => {
-                console.log(res.data);
+                console.log(res.data)
                 setItems(res.data)
             })
             .catch((err) => {
-                console.log(err);
+                console.log(err)
             })
     }, [force])
     function remove_id(id, name) {
-        axios.delete(`http://localhost:1001/Products/${id}`)
+        axios.delete(`${PRODUCT_API}/Products/${id}`)
             .then((res) => {
                 console.log(res);
                 toast.success(`${name} is successfully removed`)
@@ -28,7 +29,6 @@ function Dashboard() {
                 console.log(err);
                 toast.error("Data removed failed")
             })
-
     }
 
     let navigate = useNavigate()

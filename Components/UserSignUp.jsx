@@ -2,6 +2,7 @@ import { useState } from 'react'
 import '../Styles/UserSignUp.css'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import { USER_API } from "../config/api"
 
 function UserSignUp() {
     let [user,setUser] = useState({
@@ -24,7 +25,7 @@ function UserSignUp() {
 
     function register_user(e) {
         e.preventDefault();
-        axios.post("http://localhost:1002/User",user)
+        axios.post(`${USER_API}/User`, user)
         .then((res) => {
             console.log(res);
             toast.success("Registered Successful")

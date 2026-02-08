@@ -2,6 +2,7 @@ import { useState } from 'react'
 import '../Styles/AdminSignUp.css'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import { AUTH_API } from "../config/api";
 
 function AdminSignUp() {
     let [admin,setAdmin] = useState({
@@ -24,7 +25,7 @@ function AdminSignUp() {
 
     function register_admin(e) {
         e.preventDefault();
-        axios.post("http://localhost:1000/Admin",admin)
+        axios.post(`${AUTH_API}/Admin`, admin)
         .then((res) => {
             console.log(res);
             toast.success("Registered Successful")

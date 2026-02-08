@@ -3,6 +3,7 @@ import '../Styles/AdminLogin.css'
 import {toast} from 'react-toastify'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { AUTH_API } from "../config/api";
 
 function AdminLogin() {
   let[email,setEmail] = useState("");
@@ -10,7 +11,7 @@ function AdminLogin() {
   let[admins,setAdmins] = useState([]);
 
   useEffect(()=>{
-    axios.get("http://localhost:1000/Admin")
+   axios.get(`${AUTH_API}/Admin`)
     .then((res)=>{
       console.log(res.data);
       setAdmins(res.data);

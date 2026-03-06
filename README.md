@@ -15,7 +15,6 @@ A full-stack e-commerce web application built with **React**, featuring a dual-p
 - [Available Routes](#available-routes)
 - [Component Reference](#component-reference)
 - [Styling System](#styling-system)
-- [Known Issues & Bug Fixes](#known-issues--bug-fixes)
 - [Future Improvements](#future-improvements)
 
 ---
@@ -274,22 +273,6 @@ All styles use a centralized CSS variable system defined in `global.css` and imp
 
 ---
 
-## Known Issues & Bug Fixes
-
-The following bugs were identified and fixed during development:
-
-| File | Bug | Fix Applied |
-|------|-----|-------------|
-| `Dashboard.jsx` | `remove_id()` passed `item.name` which is `undefined` — toast showed blank product name | Changed to `item.Prname` |
-| `Dashboard.jsx` | `class=` used instead of `className=` on SVG elements | Updated to `className` |
-| `Dashboard.jsx` | No `key` prop on mapped `.productCard` elements | Added `key={item.id}` |
-| `Dashboard.jsx` | `setForce(++force)` mutates state variable directly | Replaced with `setForce(f => f + 1)` |
-| `UserNavbar.jsx` | Cart link pointed to `/admin-homepage/addtocart` | Corrected to `/user-homepage/cart` |
-| `AdminLogin.jsx` | Used `==` instead of `===` for credential comparison | Updated to strict equality |
-| `UserLogin.jsx` | Used `==` instead of `===` for credential comparison | Updated to strict equality |
-| `UserDashboard.css` | `::before` pseudo-element rendered a hardcoded green "15% OFF" badge on every product image regardless of data | Removed; badge should be rendered conditionally in JSX |
-
----
 
 ## Future Improvements
 

@@ -283,7 +283,6 @@ All styles use a centralized CSS variable system defined in `global.css` and imp
 - 🖼️ **Image upload** — replace image URL input with direct file upload (Cloudinary / S3)
 - 📄 **Pagination** — add page controls for large product catalogues
 - 🔒 **Protected routes** — use React Router `<Navigate>` guards to block unauthenticated access
-- 🌐 **Deploy** — host frontend on Vercel/Netlify, backend on Railway/Render
 
 ---
 

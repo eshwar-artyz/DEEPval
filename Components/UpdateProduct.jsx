@@ -3,6 +3,7 @@ import '../Styles/UpdateProduct.css'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import { useParams } from 'react-router-dom'
+import { PRODUCT_API } from '../src/config/api'
 
 function UpdateProduct() {
     let [product, setProduct] = useState({
@@ -71,7 +72,7 @@ function UpdateProduct() {
         "Tesla"
     ];
     useEffect(() => {
-        axios.get(`http://localhost:1001/Products/${param.id}`)
+        axios.get(`${PRODUCT_API}/Products/${param.id}`)
             .then((res) => {
                 console.log(res);
                 setProduct(res.data)
@@ -84,7 +85,7 @@ function UpdateProduct() {
 
     function update_item(e) {
         e.preventDefault();
-        axios.put(`http://localhost:1001/Products/${param.id}`, product)
+        axios.put(`${PRODUCT_API}/Products/${param.id}`, product)
             .then((res) => {
                 console.log(res);
                 toast.success("Data Updated Successfully");
@@ -116,11 +117,11 @@ function UpdateProduct() {
                             )
                         })}
                     </select>
-                    <label htmlFor="">Enter the Product Price :</label> <input type="text" value={product.price} name="price" onChange={handler} placeholder='Enter product price' required />
-                    <label htmlFor="">Enter the Product Description :</label> <input type="text" value={product.desc} name="desc" onChange={handler} placeholder='Enter product description' required />
-                    <label htmlFor="">Enter the Product Stock :</label> <input type="text" value={product.stock} name="stock" onChange={handler} placeholder='Enter product stock' required />
-                    <label htmlFor="">Enter the Product Ratings :</label> <input type="text" value={product.ratings} name="ratings" onChange={handler} placeholder='Enter product ratings' required />
-                    <label htmlFor="">Enter the Product Image url :</label> <input type="text" value={product.image} name="image" onChange={handler} placeholder='Enter product image url' required />
+                    <label htmlFor="">Enter the Product Price :</label> <input type="text" value={product.price} name="price" onChange={handler} placeholder='Enter product price' />
+                    <label htmlFor="">Enter the Product Description :</label> <input type="text" value={product.desc} name="desc" onChange={handler} placeholder='Enter product description' />
+                    <label htmlFor="">Enter the Product Stock :</label> <input type="text" value={product.stock} name="stock" onChange={handler} placeholder='Enter product stock' />
+                    <label htmlFor="">Enter the Product Ratings :</label> <input type="text" value={product.ratings} name="ratings" onChange={handler} placeholder='Enter product ratings' />
+                    <label htmlFor="">Enter the Product Image url :</label> <input type="text" value={product.image} name="image" onChange={handler} placeholder='Enter product image url'/>
                     <button>Update Product</button>
                 </form>
             </div>

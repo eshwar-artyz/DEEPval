@@ -3,12 +3,13 @@ import '../Styles/AdminNavBar.css'
 import Profile from './Profile.jsx'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { PRODUCT_API } from '../src/config/api'
 
 function AdminNavBar() {
     let [data, setdata] = useState("");
     let [items, setItems] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:1001/Products")
+        axios.get(`${PRODUCT_API}/Products`)
             .then((res) => {
                 console.log(res.data);
                 setItems(res.data)

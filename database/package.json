@@ -1,0 +1,24 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "Data for ecom",
+  "homepage": "https://github.com/eshwar-artyz/data-for-ecom#readme",
+  "bugs": {
+    "url": "https://github.com/eshwar-artyz/data-for-ecom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eshwar-artyz/data-for-ecom.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --host 0.0.0.0 --port $PORT data.json"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

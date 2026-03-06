@@ -2,11 +2,12 @@ import axios from 'axios';
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import '../Styles/UserDashboard.css'
+import { PRODUCT_API } from '../src/config/api'
 
 function UserDashboard() {
     let [items, setItems] = useState([])
     useEffect(() => {
-        axios.get("http://localhost:1001/Products")
+        axios.get(`${PRODUCT_API}/Products`)
             .then((res) => {
                 console.log(res.data);
                 setItems(res.data)

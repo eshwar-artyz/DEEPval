@@ -1,71 +1,144 @@
-h1 {
+@import './global.css';
+
+/* ─── Shared Auth Page Layout ─── */
+.auth-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.auth-page-wrapper::before {
+  content: '';
+  position: fixed;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(108, 99, 255, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ─── Page Title ─── */
+.auth-page-wrapper > h1,
+h1.auth-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
   text-align: center;
-  font-size: 2.5rem;
-  color: #234269;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  margin-bottom: 1.5rem;
-  letter-spacing: 2px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
-.adminLogin {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 32px 24px;
-  background: #f8fbff;
-  border-radius: 12px;
-  box-shadow: 0 2px 18px rgba(35, 66, 105, 0.08);
-}
-
-.adminLogin label {
-  display: block;
-  font-weight: 500;
-  margin-bottom: 8px;
-  color: #234269;
-}
-
-.adminLogin input[type="text"],
-.adminLogin input[type="password"] {
+/* ─── Admin Login Box ─── */
+.adminLogin,
+.userLogin {
   width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  margin-bottom: 18px;
-  border: 1px solid #b8cbe1;
-  border-radius: 8px;
-  background: #eaf2fb;
-  transition: border-color 0.3s;
+  max-width: 420px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-card), var(--shadow-glow);
+  position: relative;
+  overflow: hidden;
 }
 
-.adminLogin input:focus {
-  border-color: #234269;
+.adminLogin::before,
+.userLogin::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.adminLogin form,
+.userLogin form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.adminLogin form label,
+.userLogin form label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 14px;
+}
+
+.adminLogin form input,
+.userLogin form input {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  color: var(--text-primary);
+  font-size: 14.5px;
   outline: none;
-}
-
-.adminLogin button {
+  transition: var(--transition);
   width: 100%;
-  padding: 12px;
-  font-size: 1.1rem;
-  background: #234269;
-  color: #fff;
+}
+
+.adminLogin form input:focus,
+.userLogin form input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+  background: var(--bg-card-hover);
+}
+
+.adminLogin form button,
+.userLogin form button {
+  margin-top: 24px;
+  padding: 14px;
+  background: var(--accent);
+  color: white;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 8px;
-  transition: background 0.3s;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.03em;
+  transition: var(--transition);
+  box-shadow: 0 4px 20px var(--accent-glow);
+  width: 100%;
 }
 
-.adminLogin button:hover {
-  background: #3462ac;
+.adminLogin form button:hover,
+.userLogin form button:hover {
+  background: #5a52e0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px var(--accent-glow);
 }
 
-.adminLogin a {
-  display: inline-block;
+.adminLogin form button:active,
+.userLogin form button:active {
+  transform: translateY(0);
+}
+
+.adminLogin form a,
+.userLogin form a {
+  text-align: center;
   margin-top: 16px;
-  color: #3462ac;
-  text-decoration: underline;
-  font-size: 0.98rem;
+  font-size: 13.5px;
+  color: var(--text-muted);
   transition: color 0.2s;
 }
 
-.adminLogin a:hover {
-  color: #234269;
+.adminLogin form a:hover,
+.userLogin form a:hover {
+  color: var(--accent);
 }

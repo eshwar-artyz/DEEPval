@@ -1,62 +1,131 @@
-.AdminSignUp {
+@import './global.css';
+
+.AdminSignUp,
+.UserSignUp {
   min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: linear-gradient(120deg, #f1f8ff 0%, #f6e9ff 100%);
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
 }
 
-.AdminSignUp form {
-  background: #fff;
-  padding: 32px 28px 28px;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(50, 55, 80, 0.13);
+.AdminSignUp::before,
+.UserSignUp::before {
+  content: '';
+  position: fixed;
+  bottom: -10%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 101, 132, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.AdminSignUp form,
+.UserSignUp form {
   width: 100%;
-  max-width: 380px;
+  max-width: 480px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 48px 40px;
+  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 6px;
+  position: relative;
+  overflow: hidden;
 }
 
-.AdminSignUp label {
-  font-size: 15px;
-  color: #454c5e;
-  margin-bottom: 4px;
-  font-weight: 500;
+.AdminSignUp form::before,
+.UserSignUp form::before {
+  content: 'Create Account';
+  display: block;
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  text-align: center;
 }
 
-.AdminSignUp input[type="text"] {
-  padding: 11px 12px;
-  border-radius: 7px;
-  border: 1px solid #d7d9ee;
-  background: #f7f9fd;
-  margin-bottom: 10px;
-  font-size: 15px;
-  color: #292a2a;
-  outline: none;
-  transition: border-color 0.2s;
+.AdminSignUp form::after,
+.UserSignUp form::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-tertiary), var(--accent));
 }
 
-.AdminSignUp input[type="text"]:focus {
-  border-color: #7e67ff;
-  background: #fff;
-}
-
-.AdminSignUp button {
+.AdminSignUp form label,
+.UserSignUp form label {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
   margin-top: 14px;
-  padding: 11px 0;
-  border: none;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #7e67ff, #4a3eca);
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
 }
 
-.AdminSignUp button:hover {
-  background: linear-gradient(90deg, #4a3eca, #7e67ff);
-  transform: translateY(-1px) scale(1.02);
+.AdminSignUp form input,
+.UserSignUp form input {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  color: var(--text-primary);
+  font-size: 14.5px;
+  outline: none;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.AdminSignUp form input:focus,
+.UserSignUp form input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+  background: var(--bg-card-hover);
+}
+
+.AdminSignUp form input::placeholder,
+.UserSignUp form input::placeholder {
+  color: var(--text-muted);
+  font-size: 13.5px;
+}
+
+.AdminSignUp form button,
+.UserSignUp form button {
+  margin-top: 28px;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--accent) 0%, #8b83ff 100%);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.03em;
+  transition: var(--transition);
+  box-shadow: 0 4px 20px var(--accent-glow);
+  width: 100%;
+}
+
+.AdminSignUp form button:hover,
+.UserSignUp form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px var(--accent-glow);
+  filter: brightness(1.1);
+}
+
+@media (max-width: 520px) {
+  .AdminSignUp form,
+  .UserSignUp form {
+    padding: 32px 24px;
+  }
 }

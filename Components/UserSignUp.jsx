@@ -1,18 +1,21 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../Styles/UserSignUp.css'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import { USER_API } from '../src/config/api';
-
+import {v4 as uuid} from "uuid"
 function UserSignUp() {
     let [user,setUser] = useState({
+        id:uuid(),
         U_name : "",
         email : "",
         password : "",
         repassword : "",
         age : "",
         phone : "",
-        profile : ""
+        profile : "",
+       
     })
 
     function handler(e) {
@@ -23,12 +26,14 @@ function UserSignUp() {
         }))
     }
 
+    let navigate = useNavigate();
     function register_user(e) {
         e.preventDefault();
         axios.post(`${USER_API}/User`, user)
         .then((res) => {
             console.log(res);
             toast.success("Registered Successful")
+            navigate("/user-login")
         })
         .catch((err)=> {
             console.log(err);

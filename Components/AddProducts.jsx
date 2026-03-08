@@ -2,8 +2,10 @@ import { useState } from 'react'
 import '../Styles/AddProducts.css'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import {v4 as uuid} from "uuid"
 function AddProducts() {
   let [product,setProduct] = useState({
+    id:uuid(),
     "Prname" : "",
     "category" : "",
     "brand" : "",

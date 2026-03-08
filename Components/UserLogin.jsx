@@ -28,7 +28,8 @@ function UserLogin() {
     setTimeout(() => {
       if (isPresent.length > 0) {
         toast.success("Welcome back!");
-        navigate('/user-homepage');
+        console.log(isPresent[0]);
+        navigate('/user-homepage', { state: isPresent[0] });
       } else {
         toast.error("Invalid credentials");
         setLoading(false);

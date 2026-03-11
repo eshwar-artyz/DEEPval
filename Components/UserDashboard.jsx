@@ -29,17 +29,19 @@ function UserDashboard(props) {
     }
 
     function addToCart(item) {
-        console.log(item.Prname);
-        setCart(prev => ({
-            ...prev,
+        const newCart = {
+            ...cart,
             products: {
-                ...prev.products,
-                [item.id]: (prev.products[item.id] ?? 0) + 1
+                ...cart.products,
+                [item.id]: (cart.products[item.id] ?? 0) + 1
             }
-        }));
-        navigate("/user-homepage/cart", { state: cart })
+        };
+
+        setCart(newCart);
+        navigate("/user-homepage/cart", { state: newCart });
     }
-    
+
+
     return (
         <div className="userdashboard">
             {items.map((item) => {
